@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>material</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style media="screen">
+    .mdl-grid{
+      padding: 0px;
+    }
+    .not-margin{
+      margin: 0px;
+    }
+
+
+
+    /*Резиновый инпут*/
+    .mdl-textfield {
+      display: block;
+      width: auto;
+    }
+    .label-color {
+      color: rgb(71, 0, 78) !important;
+    }
+
+
+
+    /*Карточка*/
+    .demo-card-square.mdl-card {
+      width: auto;
+      height: auto;
+      min-width: 205px;
+      min-height: 320px;
+      max-width: 540px;
+      max-height: 540px;
+      background-color: #f7e8ff;
+    }
+    .demo-card-square > .mdl-card__title {
+      min-height: 200px;
+      padding: 0px;
+    }
+    .mdl-card__title-text{
+      color: #fff;
+      height: 50px;
+      width: 100%;
+      padding: 5px;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .mdl-card__supporting-text {
+      color: rgba(0,0,0,0.9);
+    }
+    .card-font-size{
+      font-size: 16px !important;
+      margin: 0px;
+      text-align: center;
+    }
+      html, body{
+        height: 100%;
+        min-width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-6 col-sm-4 col-lg-2">
+            <h3>Dashboard menu</h3>
+          </div>
+          <div class="col-xs-6 col-sm-8 col-lg-10" >
+            <h3 class="text-center">Dashboard</h3>
+            <div class="panel panel-default mdl-shadow--2dp">
+              <div class="panel-heading" style="background-color:transparent;">
+                <div class="row">
+                  <div class="form-group col-lg-3">
+                    <div class='input-group date'>
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="select_project">
+                        <label class="label-color mdl-textfield__label" for="select_project">Select project</label>
+                      </div>
+                      <span class="input-group-addon" style="background:transparent; border: 0px;">
+                        <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect">
+                          <i class="material-icons">add</i>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-group col-lg-3">
+                    <div class='input-group date' id='datetimepicker1'>
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="slect_date">
+                        <label class="label-color mdl-textfield__label" for="slect_date">Slect date</label>
+                      </div>
+                      <span class="input-group-addon" style="background:transparent; border: 0px;">
+                        <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect">
+                          <i class="material-icons">date_range</i>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-lg-offset-3 text-success">
+                    <h4><i class="material-icons">watch_later</i> Total time: 40h 00m</h4>
+                    <h4><i class="material-icons ">alarm_on</i> Total activity: 96%</h4>
+                  </div>
+                </div>
+
+              </div>
+              <div class="panel-body ">
+                <div class="container-fluid mdl-shadow--2dp">
+
+                  <div class="row container-fluid col-sm-12 col-md-11 col-lg-11 col-sm-offset-0 col-md-offset-1 col-lg-offset-1">
+                    <!-- bootstrap cards -->
+                    <h2 class="col-lg-12 col-md-12 col-sm-12">bootstrap cards</h2>
+
+                    <div class="row col-sm-9 col-md-10 col-lg-10 container-fluid">
+                      <div class="row">
+                        <div class="list-group col-sm-12 col-md-6 col-lg-4 ">
+                          <image src="1.png" class="img-responsive "/>
+                          <div class="list-group-item">
+                            <p >Name project</p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          </div>
+                          <div class="list-group-item">
+                            <h4><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 30.08.2016 10:56</h4>
+                            <h4>
+                              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span> +9min
+                              <span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> 87%
+                            </h4>
+                          </div>
+                        </div>
+
+                        <div class="list-group col-sm-12 col-md-6 col-lg-4 ">
+                          <image src="1.png" class="img-responsive "/>
+                          <div class="list-group-item">
+                            <p >Name project</p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          </div>
+                          <div class="list-group-item">
+                            <h4><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 30.08.2016 10:56</h4>
+                            <h4>
+                              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span> +9min
+                              <span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> 87%
+                            </h4>
+                          </div>
+                        </div>
+
+                        <div class="list-group col-sm-12 col-md-6 col-lg-4 ">
+                          <image src="1.png" class="img-responsive "/>
+                          <div class="list-group-item">
+                            <p >Name project</p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          </div>
+                          <div class="list-group-item">
+                            <h4><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 30.08.2016 10:56</h4>
+                            <h4>
+                              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span> +9min
+                              <span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> 87%
+                            </h4>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="col-sm-3 col-md-2 col-lg-2 mdl-shadow--2dp" style="margin: 10px">
+                      <h5 class="text-center">Statistic</h5>
+                      <h4><i class="material-icons ">alarm_add</i> 40m</h4>
+                      <h4><i class="material-icons ">alarm_on</i> 86%</h4>
+                    </div>
+
+                    <!-- material cards -->
+                    <h2 class="col-lg-12 col-md-12 col-sm-12"> material cards</h2>
+
+                    <div class="row col-sm-9 col-md-10 col-lg-10 container-fluid">
+                      <div class="row">
+                        <div class="list-group col-sm-12 col-md-6 col-lg-4 ">
+                          <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                            <div class="mdl-card__title mdl-card--expand" style="background: url('1.png') center / cover;">
+                              <div class="mdl-card__title-text">
+                                <h5><i class="material-icons">alarm</i> 31.08.2016 15:20</h5>
+                              </div>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                              <p class="card-font-size">
+                                <i class="material-icons card-font-size">alarm_add</i> 9 <i class="material-icons card-font-size">alarm_on</i> 87%
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="list-group col-sm-12 col-md-6 col-lg-4 ">
+                          <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                            <div class="mdl-card__title mdl-card--expand" style="background: url('1.png') center / cover;">
+                              <div class="mdl-card__title-text">
+                                <h5><i class="material-icons">alarm</i> 31.08.2016 15:20</h5>
+                              </div>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                              <p class="card-font-size">
+                                <i class="material-icons card-font-size">alarm_add</i> 9 <i class="material-icons card-font-size">alarm_on</i> 87%
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="list-group col-sm-12 col-md-6 col-lg-4 ">
+                          <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                            <div class="mdl-card__title mdl-card--expand" style="background: url('1.png') center / cover;">
+                              <div class="mdl-card__title-text">
+                                <h5><i class="material-icons">alarm</i> 31.08.2016 15:20</h5>
+                              </div>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                              <p class="card-font-size">
+                                <i class="material-icons card-font-size">alarm_add</i> 9 <i class="material-icons card-font-size">alarm_on</i> 87%
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="col-sm-3 col-md-2 col-lg-2 mdl-shadow--2dp" style="margin: 10px">
+                      <h5 class="text-center">Statistic</h5>
+                      <h4><i class="material-icons ">alarm_add</i> 40m</h4>
+                      <h4><i class="material-icons ">alarm_on</i> 86%</h4>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+  </body>
+</html>
